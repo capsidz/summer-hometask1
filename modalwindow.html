@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modal window</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="modal">
+        <div class="header-frame">
+            <h3 class="modal-title">Заявка на регистрацию для мероприятия</h3>
+            <div class="button-icon">
+                <button class="close-button">&times;</button>
+            </div>
+        </div>
+
+        <div class="list">
+            <form class="first-form">
+                <div class="form-field">
+                        <div class="label-frame">
+                            <h5 class="control-name">Тип мероприятия <span class="label-span">*</span></h5>
+                        </div>
+                        <div class="control">
+                            <input type="text" name="event-type" placeholder="Выберите вид мероприятия">
+                        </div>
+                </div>
+
+                <div class="form-field">
+                    <div class="label-frame">
+                        <h5 class="control-name">ФИО <span class="label-span">*</span></h5>
+                    </div>
+                    <div class="control">
+                        <input type="text" name="user-name" placeholder="Введите ФИО">
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <div class="label-frame">
+                        <h5 class="control-name">Email <span class="label-span">*</span></h5>
+                    </div>
+                    <div class="control">
+                        <input type="text" name="user-email" placeholder="Введите email">
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <div class="label-frame">
+                        <h5 class="control-name">Номер телефона <span class="label-span">*</span></h5>
+                    </div>
+                    <div class="control">
+                        <input type="text" name="phone-number" placeholder="+7 777 77 77">
+                    </div>
+                </div>
+
+                <form-field>
+                    <button class="add-button" id="addFriendBtn">
+                        <span class="icon-frame">
+                        <span class="icon">+</span>
+                            </span>
+                        <span class="text">Добавить друга</span>
+                    </button>
+                </form-field>
+
+                <div id="friendsContainer"></div>
+
+                <div class="form-field">
+                    <div class="select-frame">
+                        <h5 class="select-name">Предпочитаемый вид связи <span class="label-span">*</span></h5>
+                    </div>
+                    <div class="control">
+                        <select id="contact-select">
+                            <option disabled selected hidden>Выберите предпочитаемый вид связи</option>
+                            <option value="call">Звонок</option>
+                            <option value="email">Email</option>
+                            <option value="messanger">Мессенджер</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <footer>
+                <div class="bottom-group">
+                    <button id="cancel-button">Назад</button>
+                    <button id="confirm-button">Дальше</button>
+                </div>
+        </footer>
+    </div>
+</body>
+<script src="addFriendFunc.js"></script>
+</html>
